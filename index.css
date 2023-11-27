@@ -1,0 +1,645 @@
+
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+body
+{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+nav
+{
+    height: 10vh;
+    width: 100%;
+   opacity: 1;
+    flex-direction: row;
+    color:black;
+  
+    display: flex;
+}
+ 
+.scrool
+{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1)1s;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: black;
+}
+.h1
+{
+    color: red;
+    font-size: 2vw;
+    display: flex;
+   max-height: 10vh;
+    margin-top: -5%;
+    margin-left: 0%;
+   font-weight: bold;
+    cursor: pointer;
+    animation: animate 1.5s alternate infinite;
+}
+nav ul
+{
+
+display: flex;
+
+margin-right: auto;
+justify-content:right ;
+align-items: right;  
+text-decoration: none; 
+list-style: none;
+gap: 2vw;
+margin:3% -102%;
+font-size: 1.5vw;
+}
+nav ul li
+{
+    flex-direction: row;
+    font-size: 2vw;
+   cursor: pointer;
+  transform: translate(2s);
+
+}
+nav ul li:hover
+{
+   transform: 2s;
+    border-bottom: 3px solid green;
+}
+
+nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+@keyframes animate {
+    0%{
+        
+        color:rgb(227, 172, 172);
+        
+    }
+    30%{
+       
+        color:  rgb(214, 103, 103);
+    }
+    50%{
+       
+       color:  rgb(154, 45, 45);
+   }
+   80%{
+       
+       color:  rgb(68, 26, 26);
+   }
+   100%{
+       
+       color:  rgb(227, 13, 13);
+   }
+ }
+button
+ {
+    height: 7vh;
+    width: 15vw;
+    justify-content: right;
+    align-items: right;
+   margin: 1% 78vw;
+   background-color: rgb(152, 116, 116);
+ 
+border-radius: 30%;
+   background: 0 0 10px red;
+    color: WHITE;
+    cursor: pointer;
+ }
+ .bg
+ {
+    
+    background-image: url(sneaker.jpg);
+   
+    height: 45vh;
+    width: 85%;
+    object-fit: fill;
+    margin: 5% 7%;
+    opacity: 0.4;
+    position: relative;
+   background-repeat:no-repeat;
+   display: flex;
+  border-radius: 10px;
+   justify-content: center;
+ }
+ /* .wavy span { 
+    position: relative; 
+    display: inline-block; 
+    color:black;
+    font-size: 5vw; 
+    margin: 10% 0%;
+    
+    gap: 1%;
+    animation: ani 3s ease-in-out infinite alternate; 
+    animation-delay: calc(0.1s * var(--i)); 
+}  */
+
+@keyframes ani { 
+    0% { 
+        transform: translateY(0%); 
+        color: black;
+    } 
+
+    20% { 
+        transform: translateY(-50%);
+        color:red; 
+       
+    } 
+
+    70% { 
+        transform: translateY(-50%);
+        color:rgb(0, 255, 47); 
+       
+    } 
+
+    1%, 
+    100% { 
+        transform: translateY(0%); 
+        color: blue;
+    } 
+} 
+svg
+{
+    height: 27px;
+}
+.lifull
+{
+    height:400px;
+    width: 400px;
+    background-color: black;
+    position: absolute;
+    border-radius: 10px;
+   color: red;
+    margin: 3% ;
+    margin-left: 30%;
+ 
+    z-index: 0.71;
+
+   display: none;
+}
+.isfull h2
+{
+    color: red;
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    color: greenyellow;
+    font-weight: 700;
+  }
+
+  th {
+    background-color: #de1616;
+  }
+.lifull1
+{
+    height:400px;
+    width: 400px;
+    background-color:orange;
+    position: absolute;
+    border-radius: 10px;
+   color: white;
+    margin: 3% ;
+    margin-left: 30%;
+ 
+    z-index: 1;
+
+   display:none;
+}
+
+.lifull2
+{
+    height:400px;
+    width: 400px;
+    background-color:red;
+    position: absolute;
+    border-radius: 10px;
+    margin: 5% 60%;
+    display: none;
+   
+    z-index: 3;
+   
+}
+.lifull3
+{
+    height:400px;
+    width: 400px;
+    background-color: yellow;
+    position: absolute;
+    border-radius: 10px;
+    margin: 5%  60%;
+    z-index: 3;
+    display: none;
+   
+}
+.imagediv
+{
+    position: absolute;
+
+    display: none;
+    height: 300px;
+    width: 250px;
+}
+.cursor
+
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+    position: absolute;
+}
+.content
+{
+ margin: 0% 10%;
+    height: 70vh;
+    width: 80%;
+  
+    background-repeat: no-repeat;
+    display: flex;
+   justify-content: center;
+ border-radius: 10px;
+  background-color: gainsboro;
+    position: relative;
+}
+
+h1
+{
+    font-size: 3vw;
+    font-family: fantasy;
+    color: black;
+    display: flex;
+    animation: h1 2s alternate infinite;
+}
+@keyframes h1 {
+    0%{
+        
+        color:rgb(227, 172, 172);
+        
+    }
+    30%{
+       
+        color:  rgb(214, 103, 103);
+    }
+    50%{
+       
+       color:  rgb(154, 45, 45);
+   }
+   80%{
+       
+       color:  rgb(68, 26, 26);
+   }
+   100%{
+       
+       color:  rgb(227, 13, 13);
+   }
+ }
+p
+{
+    font-size: 3vw;
+    font-family:'Times New Roman', Times, serif;
+    margin: 5%;
+    color: black;
+}
+.three
+{
+    font-size: 5vw;
+    color: red;
+    font-weight: bolder;
+    animation: span 4s alternate infinite;
+}
+@keyframes span {
+    0%{
+        
+        color:rgb(227, 12, 12);
+        
+    }
+    30%{
+       
+        color:  rgb(245, 243, 243);
+    }
+    50%{
+       
+       color:  rgb(232, 19, 19);
+   }
+   80%{
+       
+       color:  rgb(26, 33, 68);
+   }
+   100%{
+       
+       color:  rgb(227, 13, 13);
+   }
+ }
+.span1
+{
+    font-size: 3vw;
+    color: black;
+    font-family:cursive;
+    font-weight: bolder;
+}
+img
+{
+   margin: 20vh 4vw;
+    height: 40vh;
+    width: 20vw;
+  position: relative;
+ 
+}
+.img2
+{
+    
+   margin: 0vh -10vw;
+    height: 70vh;
+    width: 40vw;
+  position: absolute;
+  display: none;
+  border-radius: 20%;
+}
+
+.span2
+{
+    color: red;
+    text-decoration: line-through;
+}
+h4
+{
+    
+    font-size: 1vw;
+   
+    color: black;
+    font-family:cursive;
+    font-weight: bolder;
+}
+h3
+{
+    margin: 33% -20%;
+    display: flex;
+    font-size: 2vw;
+    animation: h3 3s alternate infinite;
+}
+@keyframes h3 {
+    0%{
+        
+        color:rgb(227, 12, 12);
+        
+    }
+   50%{
+       
+       color: white;
+       text-decoration:line-through;
+   }
+   70%{
+       
+       color: rgb(182, 22, 22);
+       text-decoration:dotted;
+   }
+   0%
+   {
+     
+    color:rgb(227, 12, 12);
+   }
+ }
+.buybotton
+{
+    height: 10vh;
+    width: 20vw;
+    background-color: rgb(255, 191, 0);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    border: 2px  sloid rgb(255, 191, 0);
+    border-radius: 3%;
+   font-size: 2vw;
+   font-weight: 900;
+}
+.buybotton1
+{
+    height: 10vh;
+    width: 20vw;
+    background-color:transparent;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3%;
+    
+    border-radius: 3%;
+   font-size: 2vw;
+   font-weight: 900;
+}
+.buybotton2
+{
+    height: 10vh;
+    width: 10vw;
+    background-color:transparent;
+    color: black;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:-20% -40%;
+    
+    border-radius: 10px;
+   font-size: 1vw;
+   font-weight: 900;
+}
+h6
+{
+font-size: 3vw;
+font-family:cursive;
+}
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cont1
+{
+    height: 50vh;
+    width: 30vh;
+   border-top : 5px solid black;
+  
+    margin:1% 5%;
+   
+    float: left;
+    width: 80%;
+}
+.img1
+{
+
+    margin: 1% 0%;
+    position: absolute;
+    height: 45vh;
+    width: 37vw;
+  display: flex;
+    border-radius: 10%;
+display: block;
+background: transparent;
+} 
+
+.slide
+       {
+        position: absolute;
+        display: flex;
+        height: 30px ;
+        width: 30px;
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        margin:right;
+       margin: 1% 37%;
+       cursor: pointer;
+
+       }
+    
+ .shoe
+{
+    display: none;
+    margin: 1% -0%;
+    position: absolute;
+    height: 45vh;
+    width: 37vw;
+   
+    border-radius: 10%;
+    
+
+} 
+ .nam
+ {
+    margin: 3% 0%;
+    display: flex;
+   
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items:baseline;
+    justify-content: baseline;
+   
+ }
+ 
+ .nam p
+ {
+    
+    margin: 0%;
+    color: gray;
+    font-weight: 300;
+    font-size: 2vw;
+    display: flex;
+    justify-content: space-evenly;
+ }
+ #komal
+ {
+    color: #3d3232;
+    display: flex;
+    margin: 0%;
+ }
+.nam p span
+{
+    
+    font-weight: bold;
+}
+.nam .ppppppp
+{
+    font-size: 1.4vw;
+    color: green;
+    margin: 0% 5%;
+}
+.nam .rating
+{
+    
+    color: blue;
+}
+ .sizesss
+ {
+    margin: 0% 0%;
+    
+    
+    
+    display: flex;
+    
+    height: 13vh;
+    width: 100%;
+   
+ }
+ .sizessss p
+ {
+    color: gray;
+    font-weight: 900;
+ }
+ .sizessss p span
+ {
+    font-weight: bold;
+    color: green;
+ }
+ .sizessss p .nam2
+ {
+    text-decoration: line-through;
+    color: rgb(230, 184, 184);
+ }
+ .sizessssssssssssssss
+ { margin: 0% 0%;
+    display: flex;
+    
+    height: 16vh;
+    width: 100%;
+   
+    display: flex;
+  
+    display: flex;
+   
+ }
+ .sizessssssssssssssss p
+ {
+    font-size: 1.5vw;
+    margin: 0%;
+    display: flex;
+    
+ color:gray;
+ }
+ .sizessssssssssssssss .c1
+ {
+    margin: 0% 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+    width: 4vw;
+    border: 10px sloid black;
+    border-radius: 50%;
+    background-color:gray;
+    color: red;
+    font-weight: 900;
+ }
+ .sizessssssssssssssss .nobuy
+ {
+    
+    font-weight: bold;
+    background-color: orange;
+    color: black;
+ }
+ .sizessssssssssssssss .nobuy1
+ {
+    margin: 0%;
+    font-weight: bold;
+    background-color:white;
+    border: 2px solid black;
+    color: black;
+ }
+ 
